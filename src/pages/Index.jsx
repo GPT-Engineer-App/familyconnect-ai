@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Button, Container, Flex, Heading, Image, Stack, Text, useColorModeValue, VStack } from "@chakra-ui/react";
+import { Box, Button, Container, Flex, Heading, Image, Stack, Text, useColorModeValue } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import { FaComments, FaBrain, FaHeartbeat } from "react-icons/fa";
 
 const Index = () => {
@@ -17,7 +18,7 @@ const Index = () => {
             Revolutionizing nursing home communication, CloudNurse ensures your family stays connected with ease and efficiency. Our AI-driven platform provides personalized responses to keep the conversation going and the care flowing.
           </Text>
           <Stack spacing={6} direction={"row"}>
-            <Button rounded={"full"} px={6} colorScheme={"green"} bg={"green.400"} _hover={{ bg: "green.500" }}>
+            <Button as={Link} to="/get-started" rounded={"full"} px={6} colorScheme={"green"} bg={"green.400"} _hover={{ bg: "green.500" }}>
               Get Started
             </Button>
             <Button rounded={"full"} px={6}>
